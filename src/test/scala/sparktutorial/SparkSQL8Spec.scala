@@ -1,8 +1,8 @@
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 import util.FileUtil
 
 // Run in local mode and local data.
-class SparkSQL8Spec extends FunSpec {
+class SparkSQL8Spec extends AnyFunSpec {
 
   describe ("SparkSQL8") {
     it ("runs SQL queries against an RDD") {

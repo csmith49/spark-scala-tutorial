@@ -1,8 +1,8 @@
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 import util.FileUtil
 
 // Run in local mode and local data.
-class Crawl5aSpec extends FunSpec {
+class Crawl5aSpec extends AnyFunSpec {
 
   describe ("Crawl5a") {
     it ("simulates a web crawler") {
