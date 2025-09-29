@@ -1,8 +1,8 @@
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 import util.FileUtil
 
 // Run in local mode and local data.
-class WordCount3Spec extends FunSpec {
+class WordCount3Spec extends AnyFunSpec {
 
   describe ("WordCount3") {
     it ("computes the word count of the input corpus with options") {

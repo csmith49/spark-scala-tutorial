@@ -1,9 +1,9 @@
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 import java.io.{File, FileOutputStream, PrintStream}
 import util.FileUtil
 
 // Run in local mode and local data.
-class NGrams6Spec extends FunSpec {
+class NGrams6Spec extends AnyFunSpec {
 
   describe ("NGrams6") {
     it ("computes ngrams from text") {

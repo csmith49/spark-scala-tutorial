@@ -1,8 +1,8 @@
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 import util.FileUtil
 
 // Run in local mode and local data.
-class Joins7Spec extends FunSpec {
+class Joins7Spec extends AnyFunSpec {
 
   describe ("Joins7") {
     it ("computes the join of the bible book abbreviations with their full names") {

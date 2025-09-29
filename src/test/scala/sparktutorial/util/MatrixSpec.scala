@@ -1,7 +1,9 @@
 package util
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
+// MIGRATION: Added matchers import for ScalaTest 3.2.x compatibility
+import org.scalatest.matchers.should.Matchers
 
-class MatrixSpec extends FunSpec {
+class MatrixSpec extends AnyFunSpec with Matchers {
 
   describe ("Matrix") {
     describe ("construction") {

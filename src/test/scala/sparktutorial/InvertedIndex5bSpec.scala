@@ -1,8 +1,8 @@
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 import util.FileUtil
 
 // Run in local mode and local data.
-class InvertedIndex5bSpec extends FunSpec {
+class InvertedIndex5bSpec extends AnyFunSpec {
 
   describe ("InvertedIndex5b") {
     it ("computes the famous 'inverted index' from web crawl data") {

@@ -9,7 +9,8 @@ val counts = sql("""
     SELECT book, COUNT(*) as count FROM kjv_bible GROUP BY book) bc
   JOIN abbrevs_to_names an ON bc.book = an.abbrev
   """).coalesce(1)
-counts.registerTempTable("counts")
+// MIGRATION: registerTempTable deprecated in Spark 2.0+, replaced with createOrReplaceTempView
+counts.createOrReplaceTempView("counts")
 counts.printSchema
 counts.queryExecution
 counts.show(100)  // print all the lines; there are 66 books in the KJV.

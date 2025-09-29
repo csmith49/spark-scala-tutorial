@@ -1,9 +1,9 @@
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 import java.io.{ByteArrayOutputStream, OutputStream, PrintStream}
 import util.FileUtil
 
 // Run in local mode and local data.
-class Matrix4Spec extends FunSpec {
+class Matrix4Spec extends AnyFunSpec {
 
   describe ("Matrix4") {
     it ("computes the sums of the rows in parallel.") {
